@@ -1,11 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crative Travels</title>
+    <!-- daisy  -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- style css -->
+    <link rel="stylesheet" href="style/style.css">
+
 </head>
-<body>
-        
-</body>
+  <body class="p-36 pt-10 raleway_font">
+   <section class="inter_font">
+   
+    <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+            </div>
+            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+              <li><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Destination</a></li>
+              <li><a>Search</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-xl text-[#030712] raleway_font font-extrabold">P-Ticket</a>
+        </div>
+        <div class="navbar-center hidden lg:flex text-[#030712B3]">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Home</a></li>
+            <li><a>About</a></li>
+            <li><a>Destination</a></li>
+            <li><a>Search</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <button class="border border-[#1DD10066] rounded-xl p-2 lg:p-5">
+            <div class="flex">
+                <span class="raleway_font pr-5 pl-4 font-extrabold text-[#1DD100]">Bus</span>
+                <img class="pr-5" src=" images/bus-icon.png" alt="">
+            </div>
+        </button>
+        </div>
+      </div>
+   </section>
+
+   <main>
+    <!-- banner section -->
+    <section class="pt-12">
+        <div class="hero min-h-screen rounded-3xl " style="background-image: url(images/banner.png);">
+            <div class=" rounded-3xl hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div class="max-w-full">
+                <h1 class="mb-5 text-5xl font-extrabold">End-to-End Travel with <br> <span class="text-[#1DD100] pt-2">P Paribahan</span></h1>
+                <p class="mb-5 inter_font">Ride with Confidence, Journey with Comfort!
+                    Welcome aboard P Paribahan
+                    Connecting Communities, Creating Memories <br>
+                    Safe, Reliable, and Affordable Travel Solutions
+                    Book Your Seat Today and Let's Explore Together!.</p>
+                <button class="mt-5 btn btn-primary bg-[#1DD100] border-0 text-[#030712]">Buy Tickets</button>
+              </div>
+            </div>
+          </div>
+    </section>
+
+    <section>
+
+    </section>
+   </main>
+
+    <footer>
+
+    </footer>
+  </body>
 </html>
