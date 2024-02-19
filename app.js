@@ -43,8 +43,6 @@ let count = 0;
 
 
 
-let nextBtn = document.getElementById('nextBtn');
-nextBtn.disabled =true;
 
 
 const apply = document.getElementById('applyBtn');
@@ -52,7 +50,7 @@ const inputValues = document.getElementById('inputVal');
 apply.style.backgroundColor ='gray'
 inputValues.addEventListener("keyup", function(event){
     const text = event.target.value;
-    nextBtn.disabled=false;
+    
     
     if(text === "NEW15"){
         apply.removeAttribute('disabled');
@@ -106,6 +104,16 @@ inputValues.addEventListener("keyup", function(event){
 
 
 
+document.addEventListener('click', function() {
+    const scrollButton = document.getElementById('buy');
+    const section = document.getElementById('Destination'); // Change this to the ID of the section you want to scroll to
+
+    scrollButton.addEventListener('click', function() {
+        section.scrollIntoView({ behavior: 'smooth' });
+    });
+});
+
+
 
 let i =0;
 
@@ -116,4 +124,17 @@ function tictekPrice(tictek){
 
 }
 
+
+
+const numBtn = document.getElementById('numBer');
+console.log(numBtn);
+
+let nextBtn = document.getElementById('nextBtn');
+nextBtn.disabled =true;
+if(count>=0){
+    numBtn.addEventListener("keyup", function(){
+
+        nextBtn.disabled =false;
+    })
+}
 
